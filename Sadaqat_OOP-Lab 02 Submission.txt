@@ -1,0 +1,162 @@
+                                                 Sadaqat Rasool
+                                                      CS-20
+                                                 OOP_Lab-02 Tasks Submission
+
+------------------------------------------------------------------------------------------
+
+Problem No. 1
+Write a program which will keep on taking an integer as input from the user 
+continuously. All positive integers input by the user need to be added in a variable 
+called positives. All negative integers input by the user need to be added in a 
+variable called negatives. This process should continue until the user enters 0. Then
+both of the sums should be shown separately. It should also check whether |
+negatives| is greater than or smaller than positives. To compute |negatives|, you 
+are not allowed to use any pre-defined function.
+
+
+                                       Program Coded:
+
+
+positives = 0
+negatives = 0
+a = int(input("Enter any number..."))
+while ( a != 0):
+ if (a > 0):
+ positives += a
+ elif (a < 0):
+ negatives += a
+ a = int(input("Enter any number..."))
+negatives *= -1
+if positives > negatives:
+ print ("The Variable positives is greater which is ", positives)
+else:
+ print ("The Variable negatives is greater which is ", negatives)
+
+------------------------------------------------------------------------------------------
+Problem No. 2
+Write a program which will take an integer from the user as input and store it in n. It
+should output nth Fibonacci number. First two Fibonacci numbers are 0 and 1. 
+
+                                                             Program Coded:
+
+n = int(input("Enter the number..."))
+a = 0
+b = 1
+c = 2
+d = 0
+while ( n > 0 and c <= n):
+    a = b
+    b = d
+    d = b + a
+    c += 1
+print (d)
+if n <= 0:
+    print ("Invalid number, Counting starts from 1...")
+
+--------------------------------------------------------------------------------------------------
+Problem 03: 
+Modify the solution of Problem No. 2 and display the complete Fibonacci series till nth element.
+
+                                                                  Program Coded:
+
+n = int(input("Enter the number..."))
+a = 0
+b = 1
+c = 1
+d = 0
+while ( n > 0 and c <= n):
+    print (d)
+    a = b
+    b = d
+    d = b + a
+    c += 1
+if n <= 0:
+    print ("Invalid number, Counting starts from 1...")
+
+----------------------------------------------------------------------------------------------------
+Problem No. 4 
+Write a Python program which will take an integer as input and compute its factorial. 
+
+                                                                 Program Coded:
+
+a = int(input("Enter any number for it's factorial..."))
+e = a
+b = a - 1
+while ( b > 0):
+ if (b > 0):
+ e *= b
+ b -= 1
+if (a == 1 or a == 0):
+ print ("Factorial of your given number is 1")
+if (e > 1):
+ print ("Factorial of your given number is ", e)
+
+-----------------------------------------------------------------------------------------------------
+Problem No. 5
+Write a program that prints all unique combinations of 1, 2 and 3. For example, 123,
+321, 231 etc.    
+-->
+This is not solved...                                                             
+	As I'm unable to do it Without list and according to rule, list not allowed at any cost... <--
+-----------------------------------------------------------------------------------------------------
+Problem No. 6
+Write a program which will take an input from the user named as countPrimes and 
+will print first countPrimes prime numbers. 
+
+
+                                                                 Program Coded:
+
+countPrimes = int(input("Enter a number..."))
+a = 1
+e = 1
+while (e <= countPrimes):
+    b = 2
+    d = True
+    while ( b < a):
+        if (a%b == 0):
+            d = False
+        b += 1
+    if d == True:
+        print(a)
+        e += 1
+    a += 1
+
+-----------------------------------------------------------------------------------------------------
+Problem No. 7
+Write a program to print the following pattern. You can’t use more than one * in a 
+print statement. Use while and if statements where needed. 
+
+
+                                                                 Program Coded:
+
+a = 9
+r = 0
+while (a > 0):
+    b = a
+    while (b > 0):
+        print ("*",end=" ")
+        b -= 1
+    print()
+    e = -1
+    while (e < r and a>1 ):
+        print (end="  ")
+        e += 1
+    a -= 2
+    r += 1
+a = 3
+r = 3
+while (a <=9):
+    b = a
+    e = 0
+    while (e < r):
+        print(end="  ")
+        e += 1
+    while (b > 0):
+        print ("*",end=" ")
+        b -= 1
+    print()
+    a += 2
+    r -= 1
+-----------------------------------------------------------------------------------------------------
+                                                         ***...Best Wishes...***
+-----------------------------------------------------------------------------------------------------
